@@ -123,31 +123,68 @@
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
           
-            <img src="" alt="Image of your project" class="img-fluid">
+            <img src="C:\Users\maxaj\OneDrive\Desktop\USD\SPRING2024\COMP305\comp-305-website\MJeruss.github.io\images\output.png" alt="Image of your project" class="img-fluid">
           
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
               <h3>Baseball Simulator</h3>
-              <p>
-               The primary motivation behind this project was to use test driven design to develop a fun tool that demonstrates understanding of the four pillars of object oriented programming.
-              </p>
-              <p>
-              Functional requirements/what the project does
-              
-            </p>
-              <p>
-              Project design
-              </p>
-              <p>
-              Implementation
-              </p>
-
-
+                <p>
+                  The primary motivation behind this project was to use test driven development to create a fun tool that also demonstrates our understanding of the four pillars of object oriented programming. As baseball fans, we thought creating a robust baseball simulator would be a challenging but rewarding goal.
+                </p>
+                <p>
+                  Our baseball simulator allows a user to select two teams from any of the Major League Baseball teams and simulate a baseball game. There are three options for a user: simulate a single at bat at a time, simulate the rest of an inning, or simulate the rest of the game. All of the options have different behavior for displaying the state of the game. At the end of each at bat, information about the at bat is displayed as well as information about the next at bat. At the end of an inning, an inning summary is printed and information about the next at bat is printed. At the end of the game, a game summary and box score are printed.
+                </p>
+                <p>
+                  For our project, we decided to use Java. We chose java for a number of reasons. The first reason we chose java is because it is what we have been using this semester in our class. The second reason is that java is a strictly typed langauge and can be verbose--this means it is important to have self-documenting code that uses good names for variables, functions, and classes. We thought that because we are simulating a baseball game and were going to have a lot of classes and functions that represent different attributes of a baseball game, it would make sense to go with java. When it came to the design, we decided that we were going to split things up into 14 classes. 
+                  <br>
+                  <br>The classes are as follows:
+                  <br>
+                  <br>AT_BAT_RESULT
+                  <br>Batter
+                  <br>Game
+                  <br>GameSimulator
+                  <br>GameStats
+                  <br>Inning
+                  <br>Pitcher
+                  <br>Player
+                  <br>PlayGame
+                  <br>Scoreboard
+                  <br>SetupGame
+                  <br>SetupGameOutput
+                  <br>Team
+                  <br>UserInput
+                  <br>
+                  <br>GameSimulator is the main driver for the whole program--it sets up a game and plays the game. The setup of the game is handled by SetupGame, SetupGameOutput and UserInput. The PlayGame class plays the game and also uses UserInput. The game class has two Team objects, an Inning Object which tracks the state of the innings in a game, and a GameStats object. The Team objects have Player objects. The GameStats object keeps track of the game. The Game class calls static methods from the Scoreboard class which is responsibile for printing out updates about what is going on in the game. In addition to all of the classes, we also had test classes for all of the above classes as we took a test driven development approach to this project.
+                </p>
+                <p>
+                  When it came to implementation, my partner Cory, and I used github to collaborate. While we did do some paired programming and combine our brain power for the initial design and for other bits and pieces throughout the project, we tried our best to plan and delegate work so that we could implement individually.
+                  <br>
+                  <br>The classes that I was responsible for implementing individually were:
+                  <br>
+                  <br>Player
+                  <br>Pitcher
+                  <br>Batter
+                  <br>Inning
+                  <br>Game
+                  <br>
+                  <br>Because we took a test driven development approach, I was also responsible for writing the following test classes:
+                  <br>
+                  <br>PlayerTest
+                  <br>PitcherTest
+                  <br>BatterTest
+                  <br>InningTest
+                  <br>GameTest
+                  <br>
+                  <br>As I mentioned above, my partner and I took a test driven development approach meaning that we chose to look before we leaped. We used PlantUML to design our entire project and wrote all of the tests for every individual method in the entire project before we implemented the methods. The truth is, at times, this was a frustratring process that felt slow to get moving but paid off in the end. Because of our meticulous planning and design, when we put everything together at the end, it all came together quite seemlessly--we were both impressed. Even though what the project accomplishes is rather simple, we tried to write robust code and I believe the methodologies we used and skills we practiced while collaborating were very valuable. I am grateful to have had this opportunity and partner to practice what I've been taught!
+                  <br>
+                  <br>The link to our github is:
+                  <br>
+                  <br>https://github.com/usd-cs/comp305-final-project-sp24-s01s02-maxcory
+                  <br>
+                  <br>The repo is currently private but I will speak with my wonderful professor, Dr. Olsen, about making it public or making our own public version. 
+                </p>
             </div>
-
-            
-
           </div>
         </div>
       </div>
